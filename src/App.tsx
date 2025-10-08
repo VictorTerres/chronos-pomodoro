@@ -4,6 +4,8 @@ import { Container } from './components/Container';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { Countdown } from './components/Countdown';
+import { DefautInput } from './components/DefautInput';
+import { Cycles } from './components/Cycles';
 
 export function App() {
   return (
@@ -23,8 +25,13 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <label htmlFor='task'>Tarefa</label>
-            <input type='text' id='task' />
+            <DefautInput
+              type='text'
+              id='task'
+              labelText='TASK'
+              placeholder='Digite sua tarefa'
+              //disabled
+            />
           </div>
 
           <div className='formRow'>
@@ -32,8 +39,7 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <p>Ciclos</p>
-            <p>* * * * * * * * *</p>
+            <Cycles />
           </div>
 
           <div className='formRow'>
