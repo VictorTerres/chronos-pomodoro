@@ -4,8 +4,10 @@ import { Container } from './components/Container';
 import { Logo } from './components/Logo';
 import { Menu } from './components/Menu';
 import { Countdown } from './components/Countdown';
-import { DefautInput } from './components/DefautInput';
+import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
+import { DefaultButton } from './components/DefaultButton';
+import { PlayCircleIcon } from 'lucide-react';
 
 export function App() {
   return (
@@ -25,7 +27,7 @@ export function App() {
       <Container>
         <form className='form' action=''>
           <div className='formRow'>
-            <DefautInput
+            <DefaultInput
               type='text'
               id='task'
               labelText='TASK'
@@ -43,13 +45,9 @@ export function App() {
           </div>
 
           <div className='formRow'>
-            <button>Enviar!</button>
+            <DefaultButton icon={<PlayCircleIcon />} color='green' />
           </div>
         </form>
-      </Container>
-
-      <Container>
-        <section>Exibit</section>
       </Container>
 
       <Container>
