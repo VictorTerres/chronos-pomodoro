@@ -8,6 +8,7 @@ import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
 import { PlayCircleIcon } from 'lucide-react';
+import { Footer } from './components/Footer';
 
 export function App() {
   return (
@@ -32,12 +33,11 @@ export function App() {
               id='task'
               labelText='TASK'
               placeholder='Digite sua tarefa'
-              //disabled
             />
           </div>
 
           <div className='formRow'>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Exemplo de texto para acompanhar a Task.</p>
           </div>
 
           <div className='formRow'>
@@ -51,7 +51,7 @@ export function App() {
       </Container>
 
       <Container>
-        <section>Footer</section>
+        <Footer />
       </Container>
     </>
   );

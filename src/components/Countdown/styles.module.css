@@ -1,7 +1,7 @@
 .countdown {
   margin: 6.4rem;
-  line-height: 1.5rem;
+  line-height: 1.6rem;
   text-align: center;
-  font-size: clamp(12rem, 100%, 14rem);
+  font-size: clamp(12rem, 12vw, 14rem);
   font-weight: bold;
 }
